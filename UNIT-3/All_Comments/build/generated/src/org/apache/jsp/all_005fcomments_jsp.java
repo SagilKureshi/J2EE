@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class check_005fadmin_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class all_005fcomments_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -51,36 +51,15 @@ public final class check_005fadmin_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("\n");
-      out.write("        <form>\n");
-      out.write("            Username : <input type=\"text\" name=\"userName\"><br>\n");
-      out.write("            Password : <input type=\"password\" name=\"password\"><br>\n");
-      out.write("            <input type=\"submit\" value=\"login\">\n");
-      out.write("        </form>\n");
-      out.write("\n");
-      out.write("\n");
       out.write("        ");
 
-            String userName = request.getParameter("userName");
-            String password = request.getParameter("password");
-
-            if ("admin".equals(password)) {
-        
+//         out.println("Hello from java Comment");
+         
       out.write("\n");
+      out.write("         \n");
+      out.write("         ");
       out.write("\n");
-      out.write("        ");
-      if (true) {
-        _jspx_page_context.forward("display.jsp");
-        return;
-      }
-      out.write("  \n");
-      out.write("\n");
-      out.write("        ");
-} else if (userName != null && password != null && !userName.isEmpty() && !password.isEmpty()) {
-                out.println("Invalid Username or Password");
-            } 
-        
-      out.write("\n");
+      out.write("         <!--<div>Hello from HTML Comment</div>-->\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
