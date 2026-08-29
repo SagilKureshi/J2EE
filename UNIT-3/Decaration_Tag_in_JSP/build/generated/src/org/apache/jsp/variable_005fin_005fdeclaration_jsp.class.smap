@@ -1,0 +1,14 @@
+SMAP
+variable_005fin_005fdeclaration_jsp.java
+JSP
+*S JSP
+*F
++ 0 variable_in_declaration.jsp
+variable_in_declaration.jsp
+*L
+5,11:51
+16,6:11
+21:62
+22:63,3
+23,3:66
+*E
