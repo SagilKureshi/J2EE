@@ -31,25 +31,7 @@ public class p_25 extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            Enumeration<String> e = request.getParameterNames();
-           // out.println(e); what is this
-            
-            out.println("Student Registration Detail :- <br><br>");
-            while (e.hasMoreElements()) {
-                String paramName = e.nextElement();
 
-                String[] paramValues = request.getParameterValues(paramName);
-
-                out.println(paramName + " : ");
-                for (String value : paramValues) {
-                    out.println(value);
-                }
-                out.println("<br>");
-                
-            }
-        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -64,6 +46,7 @@ public class p_25 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         processRequest(request, response);
     }
 
@@ -78,10 +61,26 @@ public class p_25 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try (PrintWriter out = response.getWriter()) {
-            int rollNO = Integer.parseInt(request.getParameter("roll_no"));
-            String name = request.getParameter("stud_name");
+        response.setContentType("text/html;charset=UTF-8");
 
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            Enumeration<String> e = request.getParameterNames();
+            // out.println(e); what is this
+
+            out.println("Student Registration Detail :- <br><br>");
+            while (e.hasMoreElements()) {
+                String paramName = e.nextElement();
+
+                String[] paramValues = request.getParameterValues(paramName);
+
+                out.println(paramName + " : ");
+                for (String value : paramValues) {
+                    out.println(value);
+                }
+                out.println("<br>");
+
+            }
         }
         processRequest(request, response);
     }
