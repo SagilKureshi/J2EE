@@ -13,19 +13,18 @@
     </head>
     <body>
         <form>
-            Enter a Year <input type="number" name="year">
+            Enter a Year <input type="number" name="year" required>
             <input type="submit" value="Submit">
         </form> 
-        
-        <%
-            out.println("'abc");
-            int year = Integer.parseInt( request.getParameter("year"));          
-            if(year % 4 == 0){             
-                out.println(year + "is leap year");
 
-            }else{
-                out.println(year + "is not leap year");
-            }
-        %>
+        <% String strYear = request.getParameter("year");
+            if (strYear != null && !strYear.equals("")) {
+                int year = Integer.parseInt(strYear);
+                if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+                    out.println(year + " is a leap year");
+                } else {
+                    out.println(year + " is not a leap year");
+                }
+            }%>
     </body>
 </html>
