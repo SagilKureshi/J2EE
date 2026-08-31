@@ -13,8 +13,8 @@
     </head>
     <body>
         <form action="sum.jsp">
-            NO. 1 : <input type="number" name="no1"><br>
-            NO. 2 : <input type="number" name="no2"><br>
+            NO. 1 : <input type="number" name="no1" required><br>
+            NO. 2 : <input type="number" name="no2" required><br>
             <button type="submit">Submit</button>
         </form>
         
