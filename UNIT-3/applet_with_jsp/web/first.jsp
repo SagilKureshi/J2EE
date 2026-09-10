@@ -1,11 +1,11 @@
 <%-- 
-Document   : sum
-    Created on : 1 Sep, 2026, 12:26:50 PM
+    Document   : first
+    Created on : 10 Sep, 2026, 11:24:06 AM
     Author     : KSC64
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean class="Sum_Pack.Sum" id="obj"/>
+<jsp:plugin type="applet" code="first_applet" codebase="."></jsp:plugin>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +13,6 @@ Document   : sum
         <title>JSP Page</title>
     </head>
     <body>
-        <%=obj.sum()%>
+        <h1>Hello World!</h1>
     </body>
 </html>
