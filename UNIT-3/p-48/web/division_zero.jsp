@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page errorPage="error.jsp"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,21 +14,21 @@
     </head>
     <body>
         <form>
-            Enter No. 1 <input type="number" name="no1" required><br>
-            Enter No. 2 <input type="number" name="no2" required><br>
+            Enter No. 1 <input type="number" name="number" required><br>
+            Enter No. 2 <input type="number" name="divisor" required><br>
             <input type="submit">
-            
-                    
-            <%
-                String no1 = request.getParameter("no1");
-                String no2 = request.getParameter("no2");
-
-
-                if(no1 != null && no2 != null ){
-                    if()
-                    out.println(Integer.parseInt("no1")/Integer.parseInt("no2"));
-                }
-            %>
         </form>
+        <%
+            String str_number = request.getParameter("number");
+            String str_divisor = request.getParameter("divisor");
+
+            if (str_number != null && str_divisor != null) {
+                int number = Integer.parseInt(str_number);
+                int divisor = Integer.parseInt(str_divisor);
+                int result = number/divisor;
+                out.println("Result = " + result);
+            }
+        %>
+
     </body>
 </html>
