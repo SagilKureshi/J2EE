@@ -33,6 +33,8 @@
             
             session.setAttribute("session_name","SK" );
         %>
+        
+        <a href="logout.jsp">Logout</a>
         <h1>Hello World! from set_property</h1>
     </body>
 </html>

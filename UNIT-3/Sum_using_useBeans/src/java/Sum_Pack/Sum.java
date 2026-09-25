@@ -10,7 +10,7 @@ package Sum_Pack;
  * @author KSC64
  */
 public class Sum {
-    public int sum() {
-        return 5+5;
+    public String sum() {
+        return "sum";
     }
 }

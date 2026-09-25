@@ -1,19 +1,17 @@
 <%-- 
-Document   : sum
-    Created on : 1 Sep, 2026, 12:26:50 PM
+    Document   : error_Handle
+    Created on : 25 Sep, 2026, 10:16:50 AM
     Author     : KSC64
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean class="Sum_Pack.Sum" id="obj" />
 <!DOCTYPE html>
 <html>
-    
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
-        <%=obj.sum()%>
+        <h1>Apologize, This page is not exist</h1>   
     </body>
 </html>
